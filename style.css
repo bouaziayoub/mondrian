@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* STYLE FOR DIV CONTAINS ALL CARDS */
+.cards {
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  background-color: rgb(144, 144, 144);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  /* border: 10px solid black; */
+  box-shadow: 0 0 10px 2px rgb(59, 59, 59);
+}
+/* CARD 1 (WHITE) */
+.card1 {
+  background-color: rgb(255, 255, 255);
+  width: 26%;
+  height: 70%;
+}
+.c-w1 {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 5px solid black;
+  height: 50%;
+}
+.c-w2 {
+  background-color: rgb(255, 255, 255);
+  height: 48%;
+  border-bottom: 5px solid black;
+}
+
+/* CARD 2 (RED) */
+.card2 {
+  background-color: rgb(255, 0, 0);
+  width: 72%;
+  height: 70%;
+  border-bottom: 5px solid black;
+  border-left: 6px solid black;
+}
+
+/* CARD 3 (BLUE WHITE YELLOW) */
+.card3 {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+.c-b {
+  background-color: rgb(25, 0, 255);
+  height: 41%;
+  width: 28%;
+}
+.c-w3 {
+  background-color: rgb(255, 255, 255);
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+
+  height: 41%;
+  width: 51.5%;
+}
+.c-b2 {
+  background-color: rgb(25, 0, 255);
+  height: 19.3%;
+  border-bottom: 5px solid black;
+  /* border-left: 5px solid black; */
+}
+.c-y {
+  background-color: rgb(255, 255, 0);
+  height: 19.4%;
+}
+
+/* RESPNSIVE */
+
+@media (max-width: 500px) {
+  .cards {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card1 {
+    width: 100%;
+    height: 40%;
+  }
+  .c-w1 {
+    height: 50%;
+  }
+  .c-w2 {
+    height: 48%;
+    border-bottom: none;
+  }
+  .card2 {
+    width: 100%;
+    height: 30%;
+    border-left: none;
+    border-top: 5px solid black;
+  }
+  .card3 {
+    display: block;
+    width: 100%;
+    height: 30%;
+  }
+  .c-b {
+    width: 100%;
+    height: 40%;
+  }
+  .c-w3 {
+    width: 300%;
+    height: 40%;
+    border-left: none;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+  }
+
+  .c-b2 {
+    width: 100%;
+    height: 10%;
+  }
+  .c-y {
+    width: 100%;
+  }
+}
